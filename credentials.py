@@ -40,6 +40,7 @@ class Credentials():
         Credentials.credentials_list.remove(self)
 
 #look for credentials#
+    @classmethod
 
     def find_credential(cls, account): 
         """
