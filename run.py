@@ -56,7 +56,7 @@ def save_details(Credentials):
     Function to save a credential
     '''
 
-    Credentials.save_de()
+    Credentials.save_details()
 
 
 
@@ -220,13 +220,13 @@ def main():
 
                 elif short_code == "fc":
                         print("Enter the Account Name you want to search for")
-                        search_name = input().lower()
+                        find_name = input().lower()
 
-                        if find_credential(search_name):
-                            search_credential = find_credential(search_name)
+                        if find_credential(find_name):
+                            search_credential = find_credential(find_name)
                             print(f"Account Name : {search_credential.account}")
                             print('-' * 40)
-                            print(f"User Name: {search_credential.userName} Password :{search_credential.password}")
+                            print(f"User Name: {search_credential.username} Password :{search_credential.password}")
                             print('-' * 40)
 
                         else:
@@ -263,12 +263,12 @@ def main():
                         break
 
                     
-                else :
+            else :
 
-                    login_user(username,password) == None
-                    print("\n")
-                    print("Please try again or create an account")
-                    print("\n")
+                login_user(username,password) == None
+                print("\n")
+                print("Please try again or create an account")
+                print("\n")
             
  
         else:
